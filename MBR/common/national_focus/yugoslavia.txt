@@ -86,6 +86,38 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
+	
+	focus = {
+		id = YUG_
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = YUG_nationalist_fascist}
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
 	###############################
 	##### Democratic/Monarchy #####
 	###############################
@@ -122,7 +154,10 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
-
+	
+		###############################
+		##### Communist/Anarchist #####
+		###############################
 	focus = {
 		id = YUG_communist_anarchist
 		icon = GFX_focus_generic_soviet_politics
